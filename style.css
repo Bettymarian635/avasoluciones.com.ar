@@ -1,0 +1,704 @@
+
+    
+body {
+  font-family: Arial,  sans-serif;
+  margin: 0;
+}
+
+body,html{
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+header * {
+  max-width: 100%;
+  box-sizing: border-box;
+  
+}
+header {
+  background-color: #b8f482;
+  width:100% ;
+  max-width: 100vw;
+  overflow: hidden;
+  box-sizing: border-box;
+  height: 200px;
+  
+}
+.header-content img{ 
+  position: absolute;
+  left: 0;
+  height: 170px;
+  width: 170px;
+  top: 0; 
+  /*imation: pulso 1.6s infinite ease-in-out;/*el ava tititla*/
+  
+}
+
+.header-content {
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  font-family: Roboto,sans-serif;
+
+}
+.link-sin-subrayado{
+  text-decoration: none;
+  color: #000;
+}
+
+.img-1{
+  margin-bottom: 10px;
+  width:20%;
+  height:20% ;
+  /*object-fit: cover;*/
+  border: 30px solid white ;
+/* border-radius: 5px;*/
+  
+
+}
+.img-2{
+  width:20% ;
+  margin-bottom: 10px;
+  height:20% ;
+  border: 30px solid white;
+
+}
+.img-3{
+  width:20% ;
+  margin-bottom: 10px;
+  height:20% ;
+  border: 30px solid white;
+
+}
+.img-4{
+  width:20%;
+  margin-bottom: 10px;
+  height: 20%;
+  border: 30px solid white; 
+
+}
+
+.img-5 {
+  width: 20%;
+  margin-bottom:  10px;
+  height: 20%;
+  border: 30px solid white;
+}
+.img-6{
+  width:20% ;
+  margin-bottom: 10px;
+  height:20% ; 
+  border: 30px solid white;
+  
+}
+.img-7{
+  width: 20%;
+  margin-bottom: 10px;
+  height:20% ; 
+  border: 30px solid white;
+  
+}
+.img-8{
+  width:20% ;
+  margin-bottom: 10px;
+  height:20% ;
+  border: 30px solid white;
+  
+}
+.img-9{
+  width: 20%;
+  margin-bottom: 10px;
+  height: 20%;
+  border: 30px solid white;
+  
+}
+
+.img-10{
+  width: 20%;
+  margin-bottom: 10px;
+  height: 20%;
+  border: 30px solid white;
+
+}
+
+.img-11{
+  width: 20%;
+  margin-bottom: 10px;
+  height: 20%;
+  border: 30px solid white;
+  
+}
+
+.img-12{
+  width: 20%;
+  margin-bottom: 10px;
+  height: 20%;
+  border: 30px solid white; 
+  
+}
+.img-13{
+  width: 20%;
+  margin-bottom: 10px;
+  height: 20%;
+  border: 30px solid white; 
+  
+}
+.img-14{
+  width: 20%;
+  margin-bottom: 10px;
+  height: 20%;
+  border: 30px solid white; 
+  
+}
+.img-15{
+  width: 20%;
+  margin-bottom: 10px;
+  height: 20%;
+  border: 30px solid white; 
+  
+}
+#contenedor {
+  display: flex;
+/*flex-direction: column;*/
+/*align-items: center;*/
+
+flex-wrap: wrap;
+gap: 15px;
+justify-content: space-between;
+
+}
+
+embed ,img{
+  width: 100%;
+  max-width: 2000px;
+  height: 500px;
+  border: 1px solid #b8f482;
+  margin-top: 10px;
+}
+
+nav  {
+  background-color: #b8f482;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  
+}
+
+@media(max-width:769px){/*celuka*/
+nav  {
+ margin-top: 10px;/*baja el menu dentro delo header*/
+ margin-bottom: 50px;/*separa del border inferior*/
+  
+}
+
+nav ul { 
+  flex-direction: column;/* pasa de fila a columna*/
+ align-items: center;/*centra los items*/
+  gap: 15px;/*antes 20*/
+  font-size: 18px;/*tamaño de las letras antes 16,producto,contacto..*/
+margin-top: 20px;
+
+}
+
+
+
+nav ul li {
+  width: 100%;/*opcional que ocupe todo el ancho*/
+  text-align: center;/*centra el texto*/
+  font-family: Arial, sans-serif;
+  display: block;/*cada items ocupa su linea*/
+}
+
+.instagram-logo{
+  width:50px;
+  height: 50px;
+/*  top: 30px;*/
+  right: 10px;
+/*  position: absolute;*/
+}
+.link-sin-subrayado{
+/*  display: flex;*/
+  gap: 10px;
+
+  right: 200px;
+
+}
+
+
+}
+
+
+
+
+
+
+
+/*
+.instagram-link, .red{
+  margin-left: auto;
+  display: flex;
+  gap: 7px;
+}*/
+
+
+
+.producto {
+  width: 100%;
+
+}
+
+.slider, .carrusel {
+  height: auto;
+
+}
+
+nav ul { 
+  list-style: none;
+  margin: 0;
+ /* padding:100px;*/
+ display: flex;/*si le quito el display flkex el menu va a columna*/
+  gap: 30px;
+  font-size: 18px;
+  
+  
+}
+
+nav ul li {
+  padding: 8px  15px;/*mueve los bl,oques con un padding de 20 al left*/
+  color: white;/*color de las letras*/
+  cursor: pointer;
+  background-color: #b8f482;/*color del fondo donde estan las letras*/
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: Arial, sans-serif;/*el tipo de letra del menu*/
+  text-transform: uppercase;/*las letras amayusculas*/
+  /*display: inline-block;*/
+}
+
+
+
+
+nav ul li:hover {
+    background-color:#70ff8b;
+
+}
+#productos{
+  list-style: none;
+  font-size: 18px;
+  
+}
+.bote{
+  font-size: 18px;
+  color: #01274a;
+  font-family: Roboto,sans-serif;
+  text-align: center;
+}
+.bote p{
+  font-size: 18px;
+  color: #01274a;
+  font-family: Roboto, sans-serif;
+  
+}
+.bote img{
+  width: 200px;
+  height: 200px;
+  border-color: white;
+  text-align: center;
+  margin-bottom: 15px;
+}
+.producto {
+  
+  max-width:  1000px;
+  margin: auto;
+  border-color: white;
+  
+
+}
+
+.contenido{
+     display: none;
+      padding:  15px;
+      border-top: 1px solid #ccc; 
+       
+      
+}
+      
+
+.contenido.activo{
+  /*display: block;*/
+  display: block;
+}
+.contenido a{
+display: flex;
+align-items: center;
+margin: 0 5%;
+/*imation: pulso 1.6s infinite ease-in-out;*/
+
+}
+.contenido a:hover{
+  background-color: #b8f482;
+}
+
+.instagram-logo{
+  width: 80px;
+  height: 80px;
+ top: 30px;
+  position: absolute;
+   gap: 10px;
+/*margin-left: 1150px;*/
+right: 10px;
+/*nimation: pulso 1.6s infinite ease-in-out;el instagram titila*/
+
+ 
+}
+
+.instagram-link{
+  gap: 10px;
+/*margin-left: 1150px;*/
+/*position: absolute;*/
+right: 10px;
+
+
+}
+
+
+.red{
+  
+  position: absolute;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color:white; /*#01274a;*/
+  text-decoration: underline;/*quitar el subrayado*/
+  font-size: 20px;
+  gap:10px;
+  text-decoration: none;
+  background-color: #b8f482;
+ 
+/*margin-left: 1150px;*/
+
+right: 10px;
+top: 120px;
+
+}
+
+  
+
+
+
+/* Carrusel */
+.carrusel {
+  overflow: hidden;
+
+  width: 300%;
+  height: 300px;
+
+  position: relative;
+  background: #b8f482;
+
+  /*position: relative;
+  white-space: nowrap;
+  padding: 10px 0;*/
+}
+.slider {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.slide-track {
+  display: flex;
+  width: calc(250% * 108);
+  height: 100%;
+
+  animation: scrollCarrusel 60s  linear infinite;
+}
+/*
+.slide {
+  width: 250px;
+  height: 100%;
+  object-fit: cover;
+  flex-shrink: 0;
+  margin-right: 0;
+}*/
+.slider .carrusel{
+  height: auto;
+}
+
+@keyframes scrollCarrusel {
+  0% { transform: translateX(0);}
+  100% {transform: translateX(-50%);}
+}
+#mapa{
+  padding: 40px 20px;
+  background-color: white;
+  text-align: center;
+}
+h3{
+  font-size: 25px;
+  text-transform: uppercase;
+}
+h2{
+  text-align: center;
+  color: black;
+  text-transform: uppercase;
+  
+}
+.nosotros{
+  max-width: 1000px;/*ancho maximo*/
+  margin: 50px auto;/*centrado en espacio arriba/abajo*/
+  padding: 10px;
+  display: inline;
+   text-align: justify;
+  text-justify: inter-word;
+  
+ /*text-align:center ;titulo centrado*/
+}
+.nosotros h2{
+  font-size: 25px;
+  margin-bottom: 20px;
+  color:black;
+  text-transform: uppercase;
+  animation:pulso 1.6s infinite ease-in-out;
+  
+}
+  .nosotros .texto{
+    column-count:2 ;
+    column-gap: 30px;/*separacion entredos columnas*/
+    text-align: center;
+     margin-left: 25px;
+  margin-right: 25px;
+   text-align: justify;
+  text-justify: inter-word;
+/*display:flex se centra el texto en una sola linea
+align-items:flex-start
+border: 1px solid black; es el borde del texto*/
+  }
+.nosotros p {
+  font-size: 18px;
+  line-height: 1.6;/*interlineado,espacio entre las lineas del texto*/
+  color: #024580;
+  margin-bottom: 15px;
+  text-align: justify;
+  text-justify: inter-word;
+  margin: 0;
+}
+/*@keyframes scrollCarrusel {
+  from {
+    transform: translateX(0);
+  
+}
+to {
+  transform: translateX(-50%);
+}
+} */
+/* Botón flotante de WhatsApp */
+#whatsapp-button{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: rgb(48, 228 ,134);
+  border-radius:  50px;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  box-shadow: 0px 4px 12px rgba(20, 20, 20, 0.3);
+  animation: pulso 1.6s infinite ease-in-out;
+  z-index: 1000;
+}
+#whatsapp-button img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  pointer-events: none;
+  outline: none;
+  border-radius: 50px;
+  border: none;
+  background-color:white;;
+  object-fit: cover;
+  
+}
+@keyframes pulso{
+    0% {
+      transform: scale(1);
+    box-shadow:  0 0 10px rgba(67, 138, 60, 0.6);
+      }
+      50% {
+      transform: scale(1.15);
+    box-shadow:  0 0 25px rgba(33, 238, 125, 0.9);
+      }
+}
+h2{
+  text-align: center;
+} 
+.centrado {
+   padding-left: 20px;
+   text-align: center;
+   /*color: black;*/
+   font-size: 18px;
+   /*color: #ccc; este tono se ve la transparencia de las letras*/
+    background-color: white;
+   color: #01274a;
+     /*background-color: #b8f482;*/      
+}
+.franja{
+  width: 100%;/*ocupa todo el ancho de la pantalla*/
+  height: 80px;/*altura de la franja*/
+  background-color: #b8f482;
+  margin: 40px 0;/*separacion de arriba y abajo*/
+}       
+.footer-col h4{
+  margin-bottom: 15px;
+  color:#000;
+  font-size: 18px;
+   
+}
+   
+
+.footer-col p{
+  margin: 5px 0;
+
+}
+.footer-col img{
+  height: 30px;
+  margin: 5px;
+}
+.footer-col .icon{
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+.footer-col form{
+  display: flex;
+  margin-top: 10px;
+}
+.footer-col input{
+  flex: 1;
+  padding: 8px;
+  border: 1px solid red;
+  border-radius: 4px 0 0 4px;
+}
+.footer-col button{
+  padding: 8px 12px;
+  border: none;
+  background: aqua;
+  color: green;
+  border-radius: 0 4px 4px 0;
+cursor: pointer;
+}
+.footer-bottom{/*todos los derechos reservados*/
+  text-align: center;
+  margin-top: 30px;
+  font-size: 14px;
+  color:black;
+
+}
+.bote{/*los elementos del texto producto*/
+  font-size: 18px;
+  color:#01274a;
+  font-family: Roboto, sans-serif;
+  list-style: none;
+  /*display: flex;*/
+  align-items: center;
+  text-align: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+.bote img{/*tamaño de los dibujos del productos*/
+  width: 200px;
+  height:200px;
+  border-color: white;
+  
+}
+.mapa {
+  padding: 40px 20px;
+  background-color: white;
+  text-align: center;
+}
+footer{
+  background-color: #f2f2f2;
+  text-align: center;
+  padding: 20px;
+  
+
+}
+.footer-payship-img{/*imagens de los medios de pago*/
+  width: auto;
+  height: 25px;
+  
+}
+.footer h5, .footer-iconos, .footer a, .footer li{
+  color: #000;
+} 
+.footer-icon{
+  width:  30px;
+  height: 30px;
+}
+.footer-col h4{
+  font-size: 15px;
+}
+.cool-foot h4{
+  font-size:15px ;
+}
+
+.font-body{
+  font-size: 14px;
+}
+.footer-title{
+  margin: 10px 0 5px 0;
+}
+.text-uppercase{
+  text-transform: uppercase !important;
+}
+h4,h5{
+  font-family: inherit;
+  font-weight: 700;
+  line-height: 20px;
+  text-rendering: optimizeLegibility;
+}
+h4{
+  display: block;
+  margin-block-start:  1.33em;
+  margin-block-end: 1.33em;
+  margin-inline-start: 0px;
+  unicode-bidi: isolate;
+}
+
+#contacto img{
+  width:  40px;
+  height: 40px;
+ /* border-color: white;
+  margin-right: 10px; 
+ vertical-align: middle;
+/* padding: 8px  15px;/*mueve los bl,oques con un padding de 20 al left*/
+margin-top:0px;/*separo los logos del borde inferior del header*/
+  cursor: pointer;
+  /*text-transform: uppercase;/*las letras amayusculas*/
+  /*display: flex;/*coloca los textos debajo del logo contacto*/
+  border: #ccc;
+  margin-bottom: 1px;
+  
+  
+
+}
+
+.link-sin-subrayado{
+  display: flex;
+  gap: 10px;
+  
+
+/*  margin-top: 15px;*/
+  right: 200px;
+/*  bottom:30px ;
+
+
+ 
+ 
+ align-items: center;
+ top: 0;*/
+ 
+ 
+}
