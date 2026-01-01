@@ -14,6 +14,10 @@
         
     
 </head>
+
+
+
+
 <body>
 
     <header>
@@ -455,7 +459,108 @@ Contamos con un amplio catálogo de productos que comercializamos para la limpie
     })
   }
 </script>
+<!-- AVA - Popup Notificación -->
+<div id="avaNoticeOverlay" class="ava-notice-overlay" aria-hidden="true">
+  <div class="ava-notice-modal" role="dialog" aria-modal="true" aria-labelledby="avaNoticeTitle">
 
+    <div class="ava-notice-header">
+      <h2 id="avaNoticeTitle">📢 Avisos importantes</h2>
+      <button id="avaNoticeX" class="ava-notice-x" aria-label="Cerrar">✕</button>
+    </div>
+
+    <div class="ava-notice-body">
+      <ul class="ava-notice-list">
+        <li><strong>Horario de verano:</strong> Lun a Sáb de <b>9:00 a 18:00</b>.</li>
+       <li><strong>Promo vigente:</strong> 10% OFF pagando en efectivo o transferencia.</li>
+      </ul>
+    </div>
+
+    <div class="ava-notice-footer">
+    <!--  <a
+        href="https://wa.me/5491144106496?text = Hola como podemos ayudarte" 
+        target="_blank"
+        class="ava-btn ava-btn-primary"
+      >
+      Ver promoción
+      </a>-->
+
+      <button id="avaNoticeClose" class="ava-btn ava-btn-secondary">
+        Cerrar
+      </button>
+    </div>
+
+  </div>
+</div>
+
+<script>
+(function () {
+
+  /* ========= CONFIGURACIÓN ========= */
+
+  // Cambiar este ID cada vez que haya un aviso nuevo
+  const NOTICE_ID = "prueba-popup-1";
+
+  // Cada cuántas horas puede volver a mostrarse
+  const SHOW_AGAIN_AFTER_HOURS = 168; // 7 días
+
+  /* ================================= */
+
+  const overlay = document.getElementById("avaNoticeOverlay");
+  const closeBtn = document.getElementById("avaNoticeClose");
+  const closeX = document.getElementById("avaNoticeX");
+
+  /*const KEY_ID = "ava_notice_id";
+  const KEY_UNTIL = "ava_notice_until";*/
+
+  function openModal() {
+    overlay.style.display = "flex";
+    overlay.setAttribute("aria-hidden", "false");
+    document.body.style.overflow = "hidden";
+  }
+
+  function closeModal() {
+    overlay.style.display = "none";
+    overlay.setAttribute("aria-hidden", "true");
+    document.body.style.overflow = "";
+
+   /* const ms = SHOW_AGAIN_AFTER_HOURS * 60 * 60 * 1000;
+    localStorage.setItem(KEY_UNTIL, Date.now() + ms);
+    localStorage.setItem(KEY_ID, NOTICE_ID);*/
+  }
+
+  //siempre se muestra al entrar
+
+  window.addEventListener("load",()=> {setTimeout(openModal,300);});
+
+
+
+  /*function shouldShow() {
+    const lastId = localStorage.getItem(KEY_ID);
+    const hideUntil = Number(localStorage.getItem(KEY_UNTIL) || 0);
+
+    if (lastId !== NOTICE_ID) return true;
+    return Date.now() > hideUntil;
+  }
+
+  if (shouldShow()) {
+    window.addEventListener("load", () => {
+      setTimeout(openModal, 300);
+    });
+  }*/
+
+  closeBtn.addEventListener("click", closeModal);
+  closeX.addEventListener("click", closeModal);
+
+  overlay.addEventListener("click", (e) => {
+    if (e.target === overlay) closeModal();
+  });
+
+  document.addEventListener("click", (e) => {
+    if (e.target === "overlay") closeModal();
+  });
+
+})();
+</script>
 
 
 

@@ -702,3 +702,97 @@ margin-top:0px;/*separo los logos del borde inferior del header*/
  
  
 }
+/* ===== Popup AVA ===== */
+
+.ava-notice-overlay {
+  position: fixed;
+  inset: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0,0,0,.55);
+  padding: 16px;
+  z-index: 9999;
+}
+
+.ava-notice-modal {
+  width: min(560px, 95vw);
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0,0,0,.3);
+  overflow: hidden;
+  font-family: system-ui, Arial, sans-serif;
+}
+
+.ava-notice-header {
+  background: #0f7a3a;
+  color: #fff;
+  padding: 14px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ava-notice-header h2 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.ava-notice-x {
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.ava-notice-body {
+  padding: 16px;
+  color: #222;
+}
+
+.ava-notice-list {
+  margin: 0;
+  padding-left: 18px;
+  display: grid;
+  gap: 10px;
+}
+
+.ava-notice-footer {
+  padding: 14px 16px;
+  background: #f4f4f4;
+  display: flex;
+  gap: 12px;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+
+/* ===== Botones ===== */
+
+.ava-btn {
+  padding: 10px 16px;
+  border-radius: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  border: none;
+  font-size: 14px;
+}
+
+.ava-btn-primary {
+  background: #25d366;
+  color: #fff;
+}
+
+.ava-btn-primary:hover {
+  filter: brightness(.95);
+}
+
+.ava-btn-secondary {
+  background: #ddd;
+  color: #333;
+}
+
+.ava-btn-secondary:hover {
+  background: #ccc;
+}
