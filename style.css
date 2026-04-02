@@ -277,7 +277,7 @@ nav ul li {
   font-family: 'Georgia', serif;/*el tipo de letra del menu*/
   text-transform: uppercase;/*las letras amayusculas*/
   /*display: inline-block;*/
-  font-size: 32px;
+  font-size: 25px;
   font-weight: 700;
   text-shadow: 0 0 3px  rgba(255, 255, 255, 0.7);
 }
