@@ -160,6 +160,24 @@ header {
   border: 30px solid white; 
   
 }
+
+.img-16{
+  width: 20%;
+  margin-bottom: 10px;
+  height: 20%;
+  border: 30px solid white; 
+  
+}
+
+
+
+.img-17{
+  width: 20%;
+  margin-bottom: 10px;
+  height: 20%;
+  border: 30px solid white; 
+  
+}
 #contenedor {
   display: flex;
 /*flex-direction: column;*/
