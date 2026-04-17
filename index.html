@@ -20,6 +20,18 @@
 
 <body>
 
+
+  <div id="popup-imagenes" class="popup-imagenes">
+    <div class="popup-contenido">
+      <span class="cerrar-popup" onclick="cerrarPopup()">&times;</span>
+
+      <img src="imagenes/WhatsApp Image 2026-04-16 at 11.45.31.jpeg" alt="Aviso 1" class="imagen-popup">
+      <img src="imagenes/WhatsApp Image 2026-04-16 at 11.46.14.jpeg" alt="Aviso 2" class="imagen-popup">
+    </div>
+  </div>
+
+  
+
     <header>
 
             <div class="header-content">
@@ -152,7 +164,7 @@
 
       <div id="precios" class="contenido">
           <p> LISTA DE PRECIOS</p>
-          <embed src="imagenes/LP_ABRIL_2026.pdf" type="application/pdf">
+          <embed src="imagenes/Lista_de_precios_Abril.pdf" type="application/pdf">
     </div> 
 
  
@@ -642,6 +654,11 @@ Contamos con un amplio catálogo de productos que comercializamos para la limpie
 })();
 </script>
 
+<script>
+  function cerrarPopup() {
+    document.getElementById("popup-imagenes").style.display = "none";
+  }
+</script>
 
 
 </body>
