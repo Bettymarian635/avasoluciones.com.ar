@@ -16,13 +16,31 @@ header * {
   box-sizing: border-box;
   
 }
-header {
+/*header {
   background-color: #8cc758; 
   width:100% ;
   max-width: 100vw;
   overflow: hidden;
   box-sizing: border-box;
   height: 200px;
+  
+}*/
+header {
+  
+  background-image: 
+      linear-gradient(
+  rgba(140, 199, 88, 0.78),
+  rgba(140, 199, 88, 0.78)),
+  url("imagenes/262304local.jpg");
+  background-size: cover;
+  background-position: center; 
+  background-repeat: no-repeat;
+  width:100% ;
+  max-width: 100vw;
+  overflow: hidden;
+  box-sizing: border-box;
+  height: 200px;
+  
   
 }
 .header-content img{ 
@@ -193,19 +211,26 @@ embed ,img{
   width: 100%;
   max-width: 2000px;
   height: 500px;
-  border: 1px solid #8cc758;
+  border: 1px solid transparent;
   margin-top: 10px;
 }
 
-nav  {
+/*nav  {
   background-color: #8cc758;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   margin-top: 50px;
   
+}*/
+nav  {
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  
 }
-
 @media(max-width:769px){/*celuka*/
 nav  {
  margin-top: 10px;/*baja el menu dentro delo header*/
@@ -333,7 +358,8 @@ nav ul li {
   padding: 8px  15px;/*mueve los bl,oques con un padding de 20 al left*/
   color: #fff;/*color de las letras*/
   cursor: pointer;
-  background-color: #8cc758;/*color del fondo donde estan las letras*/
+  background-color: transparent;/*color del fondo donde estan las letras*/
+  /*background-color: #8cc758;/*color del fondo donde estan las letras*/
   border-radius: 5px;
   cursor: pointer;
   font-family: 'Georgia', serif;/*el tipo de letra del menu*/
@@ -501,7 +527,7 @@ right: 10px;
   font-size: 20px;
   gap:10px;
   text-decoration: none;
-  background-color: #8cc758;
+  background-color: transparent;
  
 /*margin-left: 1150px;*/
 
